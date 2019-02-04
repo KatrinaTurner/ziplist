@@ -1,15 +1,14 @@
 function ziplist(list1, list2) {
-  const newlist = [];
+  const newList = [];
   for (let i = 0; i < list1.length; i++) {
-    newlist.push(list1[i]);
-    newlist.push(list2[i]);
+    newList.push(list1[i]);
+    newList.push(list2[i]);
   }
-  return newlist;
+  return newList;
 }
 
 function ziplistTheSimpleWay(list1, list2) {
-  const newlist = _.zip(list1, list2);
-  return _.flatten(newlist);
+  return _.flatten(_.zip(list1, list2));
 }
 
 const test1 = ['a', 'b', 'c'];
