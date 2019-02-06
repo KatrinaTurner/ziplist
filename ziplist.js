@@ -1,7 +1,7 @@
 function ziplist(list1, list2) {
   const newList = [];
   for (let i = 0; i < list1.length; i++) {
-    newList.push(list1[i],list2[i]);
+    newList.push(list1[i],list2[i])
   }
   return newList;
 }
